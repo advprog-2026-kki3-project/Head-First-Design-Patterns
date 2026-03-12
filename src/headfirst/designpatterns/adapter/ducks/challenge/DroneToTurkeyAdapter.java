@@ -1,15 +1,15 @@
 package headfirst.designpatterns.adapter.ducks.challenge;
 
-import headfirst.designpatterns.adapter.ducks.Duck;
+import headfirst.designpatterns.adapter.ducks.Turkey;
 
-public class DroneAdapter implements Duck {
+public class DroneToTurkeyAdapter implements Turkey {
 	Drone drone;
 
-	public DroneAdapter(Drone drone) {
+	public DroneToTurkeyAdapter(Drone drone) {
 		this.drone = drone;
 	}
 
-	public void quack() {
+	public void gobble() {
 		drone.beep();
 	}
 
